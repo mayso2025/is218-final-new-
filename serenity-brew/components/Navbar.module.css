@@ -2,14 +2,25 @@
     background-color: rgb(251,251,214);
     overflow: hidden;
   }
-  
+ 
   .navList {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
-  
+  .homeItem{
+    display: block;
+    color: #6A381F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    
+  }
+  .homeItem:hover{
+    background-color: #f2f2f2;
+  }
   .navItem {
     margin: 0 10px;
   }
@@ -20,6 +31,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
   .navLink:hover {
