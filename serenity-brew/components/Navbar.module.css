@@ -13,9 +13,9 @@
     display: block;
     color: #6A381F;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
-    margin-left: % ;
+    font-weight: bold;
     
   }
   .homeItem:hover{
@@ -29,9 +29,9 @@
     display: block;
     color: #6A381F;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
-    margin-left: 150px;
+    margin-left: 225px;
     
   }
   
