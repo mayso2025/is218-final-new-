@@ -1,4 +1,4 @@
-import styles from './heroSection.module.css'; // Import the CSS module
+import styles from './herosection.module.css'; // Import the CSS module
 
 const HeroSection = () => {
     return (
