@@ -1,14 +1,13 @@
-import styles from './HeroSection.module.css'; // Import the CSS module
+import styles from './heroSection.module.css'; // Import the CSS module
 
 const HeroSection = () => {
     return (
-        <div className={styles.hero}>
-            <h1>Breathe and take a sip</h1>
-            <p>Sign up with your email to get a free coffee and pastry! </p>
-            <button className={styles.ctaButton}>Sign Up</button>
+                <div className="hero-section">
+                    {/* Hero content goes here */}
+                    <h1></h1>
+                    <p>N</p>
+                </div>
             
-        </div>
     );
 };
-
 export default HeroSection;

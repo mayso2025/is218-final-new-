@@ -1,45 +1,51 @@
-.hero {
+.hero-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     height: 80vh; /* Adjust the height as needed */
-    text-align: center;
-    margin-right: auto;
-    font-size: 100px;
+    text-align: flex;
+    font-size: 50px;
+    color: rgb(251,251,214);
     
 }
 
-.hero h1 {
+.hero-section h1 {
     font-family: Jazz LET, fantasy;
-    font-size: 5.5rem;
+    font-size: 3.0rem;
     margin-bottom: 0.5rem;
-    margin-right: 50%;
-    margin-top: 15%;
+    margin-right: 90%;
+    margin-top: 50%;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.hero-section p {
+    font-size: 3.0rem;
+    margin-bottom: 5rem;
     margin-left: 50%;
     font-family: Helvetica, sans-serif;
     
 }
 
-.ctaButton {
-    padding: 20px 50px;
-    background-color: #6A381F;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-    margin-left: 50%;
-    
-}
 
 .ctaButton:hover {
     background-color: #f2f2f2;
 }
+.hero-section {
+    background-image: url('/images/hero.jpg'); /* Adjust the path as necessary */
+    background-size: cover; /* Ensure the image covers the whole section */
+    background-position: center; /* Center the image in the section */
+    height: 400px; /* Set the height of your hero section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    color: white; /* Adjust text color based on your image */
+}
+
+@media (max-width: 1000px) {
+    .hero-section {
+        height: 300px; /* Smaller height for mobile devices */
+    }
+}
+
