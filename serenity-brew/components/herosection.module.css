@@ -1,0 +1,51 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 80vh; /* Adjust the height as needed */
+    text-align: flex;
+    font-size: 50px;
+    color: rgb(251,251,214);
+    
+}
+
+.hero-section h1 {
+    font-family: Jazz LET, fantasy;
+    font-size: 3.0rem;
+    margin-bottom: 0.5rem;
+    margin-right: 90%;
+    margin-top: 50%;
+}
+
+.hero-section p {
+    font-size: 3.0rem;
+    margin-bottom: 5rem;
+    margin-left: 50%;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+
+.ctaButton:hover {
+    background-color: #f2f2f2;
+}
+.hero-section {
+    background-image: url('/images/hero.jpg'); /* Adjust the path as necessary */
+    background-size: cover; /* Ensure the image covers the whole section */
+    background-position: center; /* Center the image in the section */
+    height: 400px; /* Set the height of your hero section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    color: white; /* Adjust text color based on your image */
+}
+
+@media (max-width: 1000px) {
+    .hero-section {
+        height: 300px; /* Smaller height for mobile devices */
+    }
+}
+
