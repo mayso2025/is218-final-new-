@@ -1,5 +1,5 @@
 import styles from './herosection.module.css';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 const HeroSection = () => {
     
@@ -8,7 +8,7 @@ const HeroSection = () => {
         <h1>Breathe and take a sip</h1>
         <p>Enjoy a complimentary coffe and pastry comb when you sign up with email!</p>
         <div className= {styles.button}> 
-        <button>Sign up!!</button>
+        <button href= "" >Sign up!!</button>
         </div>
     </div>
   
