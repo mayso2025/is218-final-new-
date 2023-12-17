@@ -1,13 +1,18 @@
-import styles from './herosection.module.css'; // Import the CSS module
+import styles from './herosection.module.css';
+// import Image from 'next/image';
 
 const HeroSection = () => {
+    
     return (
-                <div className="hero-section">
-                    {/* Hero content goes here */}
-                    <h1></h1>
-                    <p>N</p>
-                </div>
-            
-    );
+    <div className={styles.hero}>
+        <h1>Breathe and take a sip</h1>
+        <p>Enjoy a complimentary coffe and pastry comb when you sign up with email!</p>
+        <div className= {styles.button}> 
+        <button>Sign up!!</button>
+        </div>
+    </div>
+  
+
+  );
 };
 export default HeroSection;
