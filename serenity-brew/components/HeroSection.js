@@ -1,6 +1,6 @@
 import styles from './herosection.module.css';
 import Image from 'next/image';
-
+//
 const HeroSection = () => {
     
     return (
