@@ -1,14 +1,23 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
-    // Create a container div
-    const container = document.createElement('div');
-    container.innerHTML = `
+    const formHTML = `
         <form id="newsletterForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
             <button type="submit">Subscribe</button>
         </form>
     `;
+
+    // Create a container div
+    const container = document.createElement('div');
+    container.innerHTML = formHTML;
 
     // Append the form to the body
     document.body.appendChild(container);
@@ -17,10 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('newsletterForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
         const email = document.getElementById('email').value;
 
         const apiUrl = 'https://<dc>.api.mailchimp.com/3.0/lists/<list_id>/members';
-        const apiKey = 'e68bba544b40280cf4418040b19a4433-us21';
+        const apiKey = 'YOUR_API_KEY';
 
         fetch(apiUrl, {
             method: 'POST',
@@ -31,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
             body: JSON.stringify({
                 email_address: email,
                 status: 'subscribed',
+                merge_fields: {
+                    FNAME: firstName,
+                    LNAME: lastName,
+                },
             }),
         })
         .then(response => response.json())
@@ -44,3 +59,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
