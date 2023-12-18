@@ -1,4 +1,4 @@
-//modified code from Mailchimps embedded form + chatGPT assistance 
+
 
 import React, { useEffect } from 'react';
 
