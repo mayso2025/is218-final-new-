@@ -60,7 +60,18 @@ const SignUpForm = () => {
           className="validate"
           target="_blank"
         >
-          {/* ... rest of your form code ... */}
+          <h2>Subscribe To Our Newsletter Now For A Free Coffee and Pastry On Your First Visit!</h2>
+          <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
+          <div className="mc-field-group"><label htmlFor="mce-EMAIL">Email Address <span className="asterisk">*</span></label><input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required="" value="" /></div>
+          <div className="mc-field-group"><label htmlFor="mce-FNAME">First Name </label><input type="text" name="FNAME" className="text" id="mce-FNAME" value="" /></div>
+          <div className="mc-field-group"><label htmlFor="mce-LNAME">Last Name </label><input type="text" name="LNAME" className="text" id="mce-LNAME" value="" /></div>
+          <div id="mce-responses" className="clear foot">
+            <div className="response" id="mce-error-response" style={{ display: 'none' }}></div>
+            <div className="response" id="mce-success-response" style={{ display: 'none' }}></div>
+          </div>
+          <div aria-hidden="true" style={{ position: 'absolute', left: '-5000px' }}>
+          </div>
+          
           <div className="optionalParent">
             <div className="clear foot">
               <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="button" value="Subscribe" />
