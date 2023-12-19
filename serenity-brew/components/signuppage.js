@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import Script from 'next/script';
+import styles from './signuppage.module.css';
+
 
 const SignUpForm = () => {
   useEffect(() => {
@@ -37,7 +39,7 @@ const SignUpForm = () => {
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" /> 
       <style jsx>{`
         #mc_embed_signup {
-          background: #fff;
+          background: rgb(251,251,214);
           clear: left;
           font: 14px Helvetica, Arial, sans-serif;
           width: 600px;
