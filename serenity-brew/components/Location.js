@@ -10,6 +10,12 @@ const Location = () => {
         <p>Serenity Brew</p>
         <p>123 Java Street</p>
         <p>Newark, NJ 07101</p>
+        <img
+            className={styles.image}
+            src="/public/map.jpg"
+            alt="Map Of Newark"
+
+        /> 
     </div>
   
 
