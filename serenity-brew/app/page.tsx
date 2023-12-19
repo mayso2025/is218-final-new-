@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection';
 import CenterImage from '../components/Centerimage';
 import Location from '../components/Location';
 import Hours from '../components/Hours';
+import Footer from '../components/Footer';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
       <CenterImage />
       <Location /> 
       <Hours />
+      <Footer />
 
     </div>
   );
