@@ -1,0 +1,9 @@
+.location{
+    width: 500px;
+}
+.image{
+    width: 700px; 
+    height: 600px;
+    margin-bottom: 20%;
+    position: right;
+}
