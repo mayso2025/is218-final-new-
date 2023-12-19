@@ -12,7 +12,7 @@ const Location = () => {
         <p>Newark, NJ 07101</p>
         <img
             className={styles.image}
-            src="/public/map.jpg"
+            src="/images/map.jpg"
             alt="Map Of Newark"
 
         /> 
