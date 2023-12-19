@@ -34,12 +34,7 @@ const SignUpForm = () => {
 
   return (
     <div id="mc_embed_shell">
-      <Script
-        src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-        strategy="afterInteractive"
-        async
-      />
-      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" /> 
       <style jsx>{`
         #mc_embed_signup {
           background: #fff;
@@ -52,7 +47,7 @@ const SignUpForm = () => {
       `}</style>
       <div id="mc_embed_signup">
         <form
-          action="https://njit.us21.list-manage.com/subscribe/post?u=806d17f279cea77450fb64924&amp;id=9b256c8488&amp;f_id=007ef4e6f0"
+          action="https://njit.us21.list-manage.com/subscribe/post?u=806d17f279cea77450fb64924&amp;id=9b256c8488&amp;f_id=007ef4e6f0" //this link works just fine 
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
@@ -63,15 +58,15 @@ const SignUpForm = () => {
           <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
           <div className="mc-field-group">
             <label htmlFor="mce-EMAIL">Email Address <span className="asterisk">*</span></label>
-            <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required="" value="" />
+            <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required="" defaultValue="" />
           </div>
           <div className="mc-field-group">
             <label htmlFor="mce-FNAME">First Name </label>
-            <input type="text" name="FNAME" className="text" id="mce-FNAME" value="" />
+            <input type="text" name="FNAME" className="text" id="mce-FNAME" defaultValue="" />
           </div>
           <div className="mc-field-group">
             <label htmlFor="mce-LNAME">Last Name </label>
-            <input type="text" name="LNAME" className="text" id="mce-LNAME" value="" />
+            <input type="text" name="LNAME" className="text" id="mce-LNAME" defaultValue="" />
           </div>
           <div id="mce-responses" className="clear foot">
             <div className="response" id="mce-error-response" style={{ display: 'none' }}></div>
