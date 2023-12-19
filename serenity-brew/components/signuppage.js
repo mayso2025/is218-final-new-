@@ -19,9 +19,16 @@ const SignUpForm = () => {
     window.fnames[5] = 'BIRTHDAY';
     window.ftypes[5] = 'birthday';
 
+    // Load Mailchimp validation script
+    const script = document.createElement('script');
+    script.src = '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js';
+    script.async = true;
+    document.head.appendChild(script);
+
     // Clean up when the component is unmounted
     return () => {
-      // Perform any cleanup if needed
+      // Remove the script when the component is unmounted
+      document.head.removeChild(script);
     };
   }, []); // The empty dependency array ensures that this effect runs once after the initial render
 
@@ -102,6 +109,7 @@ const SignUpForm = () => {
 };
 
 export default SignUpForm;
+
 
 
 
