@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import Script from 'next/script';
+import styles from './signuppage.module.css';
+
 
 const SignUpForm = () => {
   useEffect(() => {
