@@ -10,7 +10,8 @@
     text-align: flex;
     font-size: 50px;
     color: rgb(251,251,214);
-    background-image: -o-linear-gradient('./public/images/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero.jpg");
+    background-repeat: none;
     
 }
 
