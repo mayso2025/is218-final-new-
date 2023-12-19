@@ -9,8 +9,7 @@ import Signuppage from '../components/Signuppage';
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <HeroSection />
+    <Navbar />
     <Signuppage />
     </div>
   );
